@@ -841,6 +841,10 @@ video_path video_path(
     .VGA_R, .VGA_G, .VGA_B,
     .VGA_HS, .VGA_VS, .VGA_DE,
     .VGA_SL
+    .composite_video ( ),
+    .chroma          ( {VGA_R, 4'b0} ),
+    .luma            ( {VGA_B, 4'b0} )
+
 );
 
 wire ss_load, ss_save;
